@@ -12,8 +12,10 @@
 <form name = "RPA" onsubmit=show_alert()>
 
 <h2>RPA AUTOMATION</h2>
-
-Entity: 
+<table name = "RPA FORM" cellspacing = "5">
+<tr>
+	<td>Entity</td>
+    <td>
 		<select>
           <option value="NORTON LILLY INTERNATIONAL">NORTON LILLY INTERNATIONAL</option>
           <option value="NLI TEST">NLI TEST</option>
@@ -21,16 +23,24 @@ Entity:
           <option value="AGRI PORT SERVICES">AGRI PORT SERVICES</option>
           <option value="APS CANADA">APS CANADA</option>
 		</select>
-    <br>
-	Branch: <select>
+    </td>
+</tr>
+<tr>
+	<td>Branch</td>
+    <td>
+		<select>
           <option value="USNYC">USNYC</option>
 	  <option value="USMSY">USMSY</option>
           <option value="USPIT">USPIT</option>
           <option value="USCA">USCA</option>
           <option value="USWA">USWA</option>
 		</select>
-    <br>
-	Doc Type: <select>
+    </td>
+</tr>
+<tr>
+	<td>Doc Type</td>
+    <td>
+		<select>
           <option value="VENDOR INVOICE">VENDOR INVOICE</option>
           <option value="AGENCY FEE SUPPORTING DOCUMENT">AGENCY FEE SUPPORTING DOCUMENT</option>
           <option value="APJOURNALENTRY">AP JOURNAL ENTRY</option>
@@ -42,28 +52,61 @@ Entity:
           <option value="SERVICE PURCHASE ORDER">SERVICE PURCHASE ORDER</option>
           <option value="VISA CHARGE">VISA CHARGE</option>
 		</select>
-    <br>
-	Serial No. <input type="text" name="serialNo"><br>
-	Vendor Name: <input type="text" name="vendorName"><br>
-	Invoice No: <input type="text" name="invoiceNo"><br>
-	Invoice Date: <input type="text" name="invoiceDate"><br>
-	Local Currency: <input type="text" name="localCurrency" size="3">
-    Exchange Rate: <input type="text" name="exchangeRate"><br>
+    </td>
+</tr>
+<tr>
+	<td>Serial No.</td>
+    <td><input type="text" name="serialNo"></td>
+</tr>
+<tr>
+	<td>Vendor Name</td>
+    <td><input type="text" name="vendorName"></td>
+</tr>
+<tr>
+	<td>Invoice No</td>
+    <td><input type="text" name="invoiceNo"></td>
+</tr>
+<tr>
+	<td>Invoice Date</td>
+    <td><input type="text" name="invoiceDate"></td>
+</tr>
+<tr>
+	<td>Local Currency</td>
+    <td><input type="text" name="localCurrency" size="3"></td>
+    <td>Exchange Rate</td>
+    <td><input type="text" name="exchangeRate"></td>
     
-	Invoice Currency: <input type="text" name="invoiceCurrency" size="3">
-    Invoice Amount: <input type="text" name="invoiceAmount"><br>
+</tr>
+<tr>
+	<td>Invoice Currency</td>
+    <td><input type="text" name="invoiceCurrency" size="3"></td>
+    <td>Invoice Amount</td>
+    <td><input type="text" name="invoiceAmount"></td>
     
-	Action: <select>
+</tr>
+<tr>
+	<td>Action</td>
+    <td>
+		<select>
           <option value="FORWARD TO PORT">FORWARD TO PORT</option>
           <option value="FORWARD TO SUBAGENT ACCOUTANT">FORWARD TO SUBAGENT ACCOUTANT</option>
           <option value="INVALID FOR PASS">INVALID FOR PASS</option>
           <option value="WORK IN PROGRESS - SCAN CENTER">WORK IN PROGRESS - SCAN CENTER</option>
 		</select>
-    <br>
-	Remarks: <input type="text" name="remarks"><br>
-	<br><br>
-	<input type="submit" value="Submit">
-    	<input type="submit" value="Clear">
+    </td>
+</tr>
+<tr>
+	<td>Remarks</td>
+    <td><input type="text" name="remarks"></td>
+</tr>
+<tr>
+</tr>
+<tr>
+	<td></td>
+	<td><input type="submit" value="Submit"></td>
+    <td><input type="submit" value="Clear"></td>
+<tr>
+</table>
 </form>
   
 </body>
